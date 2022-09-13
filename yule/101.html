@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>#div1 {
+        height: 100px;
+        width: 100px;
+        background-color: orange;
+      }
+      
+      #div2 {
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+      }
+      
+      .hidden {
+        visibility: hidden;
+      }</style>
+</head>
+<body>
+    <div id="div1">Foo</div>
+<div id="div2" class="hidden">Bar</div>
+</body>
+<script>document.getElementById('div1').addEventListener('click', () => {document.getElementById('div2').classList.toggle('hidden');}, false)</script>
+</html>
